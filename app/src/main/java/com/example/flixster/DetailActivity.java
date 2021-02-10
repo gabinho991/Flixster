@@ -74,7 +74,14 @@ import okhttp3.Headers;
              @Override
              public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                  Log.d("DetailActivity","onInitializationSuccess");
-                 youTubePlayer.cueVideo(youtubekey);
+                 Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
+                 if (movie.getRating()>=5)
+                 {youTubePlayer.loadVideo(youtubekey);
+                 }
+                 else
+                 {
+                     youTubePlayer.cueVideo(youtubekey);
+                 }
 
              }
 
