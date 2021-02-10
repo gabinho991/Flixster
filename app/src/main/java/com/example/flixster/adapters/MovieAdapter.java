@@ -79,7 +79,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
             }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            Glide.with(context)
+                    .load(imageUrl)
+                    .circleCrop()
+                    .into(ivPoster);
 
             container.setOnClickListener(new View.OnClickListener() {
                 @Override
