@@ -1,4 +1,4 @@
-package com.example.flixster;
+  package com.example.flixster;
 
 import android.os.Bundle;
 import android.util.Log;

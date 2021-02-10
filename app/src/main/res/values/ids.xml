@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="item_movie" type="id" />
-    <item name="RelativeLayout" type="id" />
+    <item name="container" type="id" />
 </resources>
